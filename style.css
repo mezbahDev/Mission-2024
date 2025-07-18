@@ -57,7 +57,7 @@ body {
 }
 
 .primary-btn {
-  padding: 12px;
+  padding: 14px 35px;
   border: none;
   background-color: var(--secondary-color);
   color: white;
@@ -185,6 +185,69 @@ body {
   max-width: 240px;
 }
 
+/* application section style */
+
+.application {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+  font-family: "poppins";
+}
+
+.build-section {
+  display: flex;
+  align-items: center;
+  max-width: 1130px;
+  justify-content: space-between;
+  gap: 165px;
+  padding: 80px 100px;
+}
+
+.build-app {
+  position: relative;
+  max-width: 340px;
+}
+
+.build-txt {
+  max-width: 525px;
+}
+
+.shape {
+  z-index: 0;
+  position: absolute;
+}
+
+.app {
+  position: relative;
+  width: 225px;
+}
+
+.s1 {
+  width: 147px;
+  left: -3rem;
+  top: -3rem;
+}
+
+.s2,
+.s3 {
+  width: 77px;
+}
+
+.s2 {
+  top: 22rem;
+  left: -1rem;
+}
+
+.s3 {
+  top: 15rem;
+  left: 11rem;
+}
+
+.build-txt-description {
+  color: var(--dark-2);
+}
+
 /* <<<<<<<<<<<<  X-Small screen >>>>>>>>>>>> */
 
 @media (max-width: 576px) {
@@ -280,6 +343,30 @@ body {
     text-align: center;
     padding: 0 2rem;
   }
+
+  /* application section style */
+
+  .build-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 3rem;
+  }
+
+  .build-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mission-title {
+    text-align: center;
+  }
+
+  .build-txt-description {
+    color: var(--dark-2);
+    text-align: center;
+  }
 }
 
 /* <<<<<<<<<<<<  Small screen >>>>>>>>>>>> */
@@ -333,14 +420,9 @@ body {
 
   .limit,
   .community {
-    flex-direction: column;
     align-items: center;
     margin-top: 10rem;
-    gap: 50px;
-  }
-
-  .community {
-    flex-direction: column;
+    gap: 40px;
   }
 
   .shape1 {
@@ -351,13 +433,13 @@ body {
 
   .communityShape {
     top: -5rem;
-    left: 16rem;
+    left: -4rem;
   }
 
   .coding {
     z-index: 1;
     position: relative;
-    width: 400px;
+    width: 300px;
   }
 
   .txt-section {
@@ -370,6 +452,31 @@ body {
   }
 
   .description {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  /* application section style */
+
+  .build-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 3rem;
+  }
+
+  .build-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mission-title {
+    text-align: center;
+  }
+
+  .build-txt-description {
+    color: var(--dark-2);
     text-align: center;
   }
 }
@@ -437,5 +544,21 @@ body {
   .description {
     text-align: center;
     padding: 0 2rem;
+  }
+
+  /* application section style */
+
+  .build-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mission-title {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .build-txt-description {
+    text-align: center;
   }
 }

@@ -45,7 +45,7 @@ body {
   padding-left: 2rem;
 }
 
-.mission {
+.txt {
   color: var(--primary-color);
 }
 
@@ -73,6 +73,59 @@ body {
 
 .person0 {
   max-width: 426px;
+}
+
+/* mission section style */
+.mission {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  font-family: "poppins";
+  margin-top: 82px;
+}
+
+.mission-title {
+  font-size: 3rem;
+}
+
+.mission-container {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+
+.mission-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 360px;
+  background-color: rgba(126, 79, 166, 0.1);
+  padding: 1rem 2rem;
+  border-radius: 26px;
+}
+
+.mission-box img {
+  width: 145px;
+}
+
+.mission-header {
+  font-size: 1.5rem;
+  font-size: 600;
+}
+
+.mission-description {
+  max-width: 320px;
+  color: var(--dark-4);
+  font-size: 1rem;
+}
+
+.vision {
+  background-color: rgba(255, 209, 89, 0.1);
+}
+.goal{
+  background-color: #fff4d6;
 }
 
 /* <<<<<<<<<<<<  X-Small screen >>>>>>>>>>>> */
@@ -110,7 +163,37 @@ body {
   .person0 {
     width: 100%;
   }
+
+  /* mission section style */
+
+  .mission-title {
+    font-size: 2rem;
+  }
+
+  .mission-container {
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 2rem;
+  }
+
+  .mission-box {
+    align-items: center;
+    gap: 1rem;
+    max-width: 360px;
+    padding-bottom: 2rem;
+  }
+  .mission-header {
+    font-size: 1.5rem;
+    font-size: 600;
+  }
+
+  .mission-description {
+    text-align: center;
+  }
+
 }
+
+
 /* <<<<<<<<<<<<  Small screen >>>>>>>>>>>> */
 @media (min-width: 576px) and (max-width: 768px) {
   /* header banner section style */
@@ -132,7 +215,7 @@ body {
     font-weight: 400;
     line-height: 50px;
     text-align: center;
-    border-left: none;
+    border: none;
     padding: 0;
   }
 
@@ -145,12 +228,24 @@ body {
   .person0 {
     width: 100%;
   }
+
+    /* mission section style */
+
+  .mission-title {
+    font-size: 2.5rem;
+  }
+
+  .mission-container {
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 2rem;
+  }
+
 }
 /* <<<<<<<<<<<<  Medium screen >>>>>>>>>>>> */
 @media (min-width: 768px) and (max-width: 992px) {
-
-      /* header banner section style */
-  .banner-container{
+  /* header banner section style */
+  .banner-container {
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -172,5 +267,17 @@ body {
   .person0 {
     width: 100%;
   }
-}
 
+
+    /* mission section style */
+
+  .mission-title {
+    font-size: 3rem;
+  }
+
+  .mission-container {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
